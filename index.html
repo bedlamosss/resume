@@ -6,97 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Nikolai, cv, resume" />
     <meta name="description" content=" Это сайт-резюме Русецкого Николая" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Nikolai Rusetski</title>
   </head>
   <body>
-    <img src="img.jpg" alt="Foto" width="200" />
-    <h1>Николай Русецкий</h1>
-    <p>
-      Я работаю <strong>солистом вокалистом</strong> в
-      <strong
-        >Белорусском государственном академическом музыкальном театре.
-      </strong>
-      <p>Я <em>люблю путешествовать, заниматься спортом и программировать. </em></p>
-    </p>
-    <h4>
-      <strong>Список социальных сетей:</strong>
-    </h4>
-    <a href="https://www.instagram.com/nikolai_rusetski" target="_blank"
-      >Instagram</a
-    >
-    | <a href="https://t.me/NikolaRusetski" target="_blank">Telegram</a> |
-    <a
-      href="https://www.youtube.com/channel/UCQpWZ6pPpHZogbDFprPjhkA"
-      target="_blank"
-      >Yoytube</a
-    >
-    <h2>Мои хобби</h2>
+    <div class="container">
+      <div class="info">
+        <img src="img.jpg" alt="Foto" class="avatar" />
 
-      <ol>
-        <li>Настольный теннис</li>
-        <li>Автомобили</li>
-        <li>Компьютерные игры</li>
-        <li>Путешествия</li>
-      </ol>
-    
-<h2>Опыт работы</h2>
-    
-<table>
-  <thead>
-    <tr>
-      <th>Название</th>
-      <th>Должность</th>
-      <th>Год</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-    <td>БГАКХ</td>  
-    <td>Артист хора</td>
-    <td>2008-2011</td>
-    </tr>
-    <tr>
-      <td>арт группа "Беларусы"</td>  
-      <td>солист</td>
-      <td>2011-2013</td>
-      </tr>
-      <tr>
-        <td>БГАМТ</td>  
-        <td>артист-вокалист</td>
-        <td>2013- сейчас</td>
-        </tr>
-  </tbody>
-</table>
+        <div class="info-text">
+          <h1>Николай Русецкий</h1>
+          <p>
+            Я работаю <strong>солистом вокалистом</strong> в
+            <strong
+              >Белорусском государственном академическом музыкальном театре.
+            </strong>
+          </p>
 
-<h2>Связаться со мной</h2>
-<form action="/">
-<div>
-  <label for="name">Ваше имя</label>
-  <input type="text" id="name"
-  placeholder="Введите имя">
-</div>
+          <p>
+            Я
+            <em
+              >люблю путешествовать, заниматься спортом и программировать.
+            </em>
+          </p>
+          <h4>
+            <strong>Список социальных сетей:</strong>
+          </h4>
+          <a href="https://www.instagram.com/nikolai_rusetski" target="_blank"
+            >Instagram</a
+          >
+          | <a href="https://t.me/NikolaRusetski" target="_blank">Telegram</a> |
+          <a
+            href="https://www.youtube.com/channel/UCQpWZ6pPpHZogbDFprPjhkA"
+            target="_blank"
+            >Yoytube</a
+          >
+        </div>
+      </div>
+      <div class="card bg-green">
+        <h2>Мои хобби</h2>
 
-<div>
-  <label for="email">Ваш email:</label>
-  <input type="email" id="email"
-  placeholder="Введите email">
-</div>
+        <ol class="list">
+          <li>Настольный теннис</li>
+          <li>Автомобили</li>
+          <li>Компьютерные игры</li>
+          <li>Путешествия</li>
+        </ol>
+      </div>
 
-<div>
-  <label for="message">Ваше сообщение</label>
-  <br>
-  <textarea name="" id="message" cols="20" rows="5"
-  placeholder="Введите сообщение"></textarea>
-</div>
+      <div class="card bg-red">
+        <h2>Опыт работы</h2>
 
-<input type="submit" value="Отправить!">
- </form>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>БГАКХ</td>
+              <td>Артист хора</td>
+              <td>2008-2011</td>
+            </tr>
+            <tr>
+              <td>арт группа "Беларусы"</td>
+              <td>солист</td>
+              <td>2011-2013</td>
+            </tr>
+            <tr>
+              <td>БГАМТ</td>
+              <td>артист-вокалист</td>
+              <td>2013- сейчас</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card bg-yellow">
+        <h2>Мои курсы</h2>
 
- <br>
- <br>
- <br>
- <br>
- <br>  
+        <ul class="link-list">
+          <li>
+            <a href="https://vladlen.ru/junior"
+              >Получение профессии Frontend Оазработчика</a
+            >
+          </li>
+          <li>
+            <a href="https://vladlen.ru/courses">Все курсы</a>
+          </li>
+        </ul>
+      </div>
 
-</body>
+     
+
+      <form action="/" class="form">
+          <h2>Связаться со мной</h2>
+
+          <div class="form-row">
+
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ваше сообщение</label>
+          <textarea
+            name=""
+            id="message"
+            cols="20"
+            rows="5"
+            placeholder="Введите сообщение"
+          ></textarea>
+        </div>
+
+        <input class="btn" type="submit" value="Отправить!" />
+      </form>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+  </body>
 </html>
